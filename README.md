@@ -9,7 +9,7 @@ flutter run
 
 - [Figma File ](<https://www.figma.com/design/Uawl5uLxKbhJmSGmHX5dMs/Grid-Transition-Media-(Community)?m=auto&t=kaoSkrnlQKbI8Mol-6>)
 
-- [Demo Link](https://flutter-gallery.netlify.app)
+- [Demo Link](https://flutter-animated-gallery.netlify.app)
 
 A few resources to get you started if this is your first Flutter project:
 

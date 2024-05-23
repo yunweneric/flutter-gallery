@@ -71701,7 +71701,7 @@ return A.u1(B.D,A.afI(A.u1(B.D,new A.u_(A.Jy(B.ky,A.fz(q,q,B.w,q,new A.d2(q,A.aj
 $S:419}
 A.Gr.prototype={
 U(a){var s=null,r=A.ash(B.a4,B.C_),q=A.ahK().$3$color$fontSize$fontWeight(B.j,25,B.ey)
-return new A.wp(B.Ft,"Flutter Demo",A.alR(s,r,B.hw,A.a5F(s,A.ahK().$3$color$fontSize$fontWeight(B.j,14,B.k),A.ahK().$3$color$fontSize$fontWeight(B.j,10,B.k),s,q,s,s,s,s,s,s,s,s,s,s),!0),!1,s)}}
+return new A.wp(B.Ft,"Flutter Gallery",A.alR(s,r,B.hw,A.a5F(s,A.ahK().$3$color$fontSize$fontWeight(B.j,14,B.k),A.ahK().$3$color$fontSize$fontWeight(B.j,10,B.k),s,q,s,s,s,s,s,s,s,s,s,s),!0),!1,s)}}
 A.kR.prototype={}
 A.n1.prototype={}
 A.mV.prototype={
