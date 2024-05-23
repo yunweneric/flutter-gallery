@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gallery/model/gallery_item.dart';
-import 'package:flutter_gallery/pages/gallery_details.dart';
+import 'package:flutter_gallery/pages/gallery.dart';
 import 'package:flutter_gallery/utils/sizing.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -42,7 +42,7 @@ class _GalleryCardState extends State<GalleryCard> {
           PageRouteBuilder(
             transitionDuration: Duration(seconds: 1),
             reverseTransitionDuration: Duration(seconds: 1),
-            pageBuilder: (context, animation, secondaryAnimation) => GalleryDetails(tags: randomList),
+            pageBuilder: (context, animation, secondaryAnimation) => Gallery(tags: randomList),
             transitionsBuilder: (context, animation, secondaryAnimation, child) {
               return FadeTransition(
                 opacity: Tween<double>(
@@ -112,7 +112,7 @@ class _GalleryCardState extends State<GalleryCard> {
             ),
             AnimatedPositioned(
               duration: duration,
-              right: hasHovered ? 0 : -100,
+              right: hasHovered ? -20 : -100,
               bottom: 0,
               child: Container(
                 alignment: Alignment.bottomRight,
@@ -122,6 +122,7 @@ class _GalleryCardState extends State<GalleryCard> {
                   clipBehavior: Clip.none,
                   physics: const NeverScrollableScrollPhysics(),
                   child: Builder(builder: (context) {
+                    // randomList.shuffle();
                     return Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
@@ -151,7 +152,7 @@ class _GalleryCardState extends State<GalleryCard> {
           scale: hasHovered ? 0.02 * index + 1 : 1,
           duration: duration,
           child: AnimatedRotation(
-            turns: hasHovered ? 0.01 * index + 1 : 1,
+            turns: hasHovered ? 0.005 * index + 1 : 1,
             duration: duration,
             child: Transform(
               alignment: Alignment.bottomRight,
